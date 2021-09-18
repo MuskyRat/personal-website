@@ -75,6 +75,7 @@
     background: #2a2a2a;
     box-shadow: 0 0 calc(2px + 8 * ((100vw - 280px) / (1903 - 280))) calc(1px + 4 * ((100vw - 280px) / (1903 - 280))) white;
     display: flex;
+    cursor: pointer;
 
 }
 
@@ -89,7 +90,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    cursor: pointer;
     width: 40%;
 }
 

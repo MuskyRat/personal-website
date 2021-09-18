@@ -48,8 +48,8 @@ const Portfolio = () => {
                             Here you can find info about projects I've worked on.
                         </p>
                     </div>
-                    <motion.div className={style.Container2}>
-                        <motion.div animate={animation1} className={style.Item1} onClick={(e) => window.open('https://muskyrat.github.io/social_network/', '_blank')?.focus()}>
+                    <motion.div className={style.Container2} onClick={(e) => window.open('https://muskyrat.github.io/social_network/', '_blank')?.focus()}>
+                        <motion.div animate={animation1} className={style.Item1} >
                             <div className={style.PicItem1}>
                                 <img className={style.SN} src={sn} alt="sn1" />
                             </div>
