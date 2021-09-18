@@ -1,0 +1,75 @@
+.Home {
+    background: rgb(54,30,70);
+    background: linear-gradient(90deg, rgba(54,30,70,1) 66%, rgba(140,28,209,1) 96%);
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+    padding-top: calc(60px + 20 * ((100vw - 320px) / (1903 - 320)));
+    position: relative;
+}
+
+.Container {
+    position: absolute;
+    top: 25%;
+    left: calc(16% - 110 * ((100vw - 320px) / (1903 - 320)));
+    /*left: 10%;*/
+    color: white;
+    z-index: 2;
+}
+
+@media (min-width: 1903px) {
+    .Home .Container {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+}
+
+.Home .Container .Hello {
+    font-size: calc(2.5rem + 50 * ((100vw - 320px)/(1903 - 320)));
+}
+
+.Container h1 {
+    margin: 0;
+}
+
+.Code {
+    position: absolute;
+    /*height: 50%;*/
+    /*width: 75%;*/
+    /*top: 40%;*/
+    /*left: 15%;*/
+    width: 45%;
+    top: 20%;
+    left: 45%;
+    opacity: .5;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+@media (orientation: landscape) and (max-height: 380px) {
+    .Code {
+        top: 25%;
+    }
+}
+
+
+@media (orientation: portrait) and (max-width: 700px) {
+    .Code {
+        top: 38%;
+        left: 1%;
+        width: 98%;
+    }
+}
+
+@media (min-width: 1903px) {
+    .Code {
+        width: 50%;
+        top: 20%;
+        left: 45%;
+    }
+}
+
+svg {
+    position: absolute;
+    top: 25%;
+    z-index: 0;
+}

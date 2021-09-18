@@ -1,0 +1,160 @@
+.Skills {
+    padding-top: calc(60px + 20 * ((100vw - 320px) / (1903 - 320)));
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+    background: black;
+    position: relative;
+}
+
+.Container {
+    height: calc((100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320)))) - 7vh - 2.33998 * (1.7rem + 28 * ((100vw - 320px) / (1903 - 320))));
+    width: 100%;
+}
+
+.Wrapper {
+    width: 80%;
+    height: 100%;
+    /*background: aqua;*/
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .Wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Wrapper {
+        width: 100%;
+    }
+}
+
+.MySkills {
+    height: 100%;
+    width: 100%;
+}
+
+.Text {
+    width: 100%;
+    /*height: 8%;*/
+    margin: 0 0 2% 0;
+}
+
+.Text p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.HackerContainer {
+    height: 35%;
+    text-align: center;
+    padding-left: 3%;
+}
+
+@media (orientation: landscape) and (height: 280px) {
+    .HackerContainer {
+        height: 0;
+    }
+}
+
+@media (orientation: portrait) {
+    .HackerContainer {
+        height: 25%;
+    }
+}
+
+.Hacker {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    z-index: 0;
+    opacity: .6;
+}
+
+@media (orientation: landscape) and (height: 280px) {
+    .Hacker {
+        display: none;
+    }
+}
+
+.List {
+    width: 100%;
+}
+
+.List ul {
+    padding-left: 5%;
+    padding-top: 1%;
+    color: white;
+    height: calc((.5rem + 21 * ((100vw - 320px) / (1903 - 320))) * 8.7);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 2;
+    box-shadow: 0 0 1vw .3vw white;
+    z-index: 1;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 820px) and (orientation: landscape) {
+    .List ul {
+        width: 93%;
+        height: calc((.5rem + 21 * ((100vw - 320px) / (1903 - 320))) * 5);
+    }
+}
+
+@media (orientation: portrait) {
+    .List ul {
+        padding-left: 10%;
+        padding-top: 2%;
+        width: 65%;
+        height: calc((1rem + 21 * ((100vw - 320px) / (1903 - 320))) * 16.7);
+    }
+}
+
+@media (orientation: portrait) and (max-width: 280px) {
+    .List ul {
+        width: 70%;
+        height: calc((1rem + 21 * ((100vw - 320px) / (1903 - 320))) * 16);
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .List ul {
+        width: 55%;
+        padding-left: 9%;
+    }
+}
+
+.List ul li {
+
+}
+
+@media (orientation: portrait) {
+    .List ul li {
+        font-size: calc(1rem + 21 * ((100vw - 320px) / (1903 - 320)));
+    }
+}
+
+@media (orientation: portrait) and (max-width: 280px) {
+    .List ul li {
+        font-size: calc(1rem + 21 * ((100vw - 320px) / (1903 - 320)));
+    }
+}

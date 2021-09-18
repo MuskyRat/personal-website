@@ -1,0 +1,142 @@
+.YouTube {
+    padding-top: calc(60px + 20 * ((100vw - 320px) / (1903 - 320)));
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+    background: black;
+    position: relative;
+    z-index: 1;
+}
+
+.Background {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+}
+
+.Container {
+    height: calc((100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320)))) - 6vh - 2.33998 * (1.7rem + 28 * ((100vw - 320px) / (1903 - 320))));
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.Wrapper {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    .Wrapper {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Wrapper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Wrapper {
+        width: 80%;
+    }
+}
+
+.YouTubeContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Paragraph {
+    height: 6%;
+}
+
+.Paragraph p {
+    margin: 0;
+}
+
+
+.Videos {
+    height: 94%;
+    width: 100%;
+}
+
+.VideoContainer {
+    height: 42%;
+    width: 100%;
+    margin-top: 1.5%;
+    padding: .5% 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px white;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+@media (orientation: landscape) and (max-height: 280px) {
+    .VideoContainer {
+        height: 39%;
+    }
+}
+
+@media (orientation: portrait) {
+    .VideoContainer {
+        height: 16%;
+        margin-top: 4%;
+    }
+}
+
+.Thumbnail {
+    width: 42%;
+    height: 100%;
+    padding: 0 2.5%;
+    position: relative;
+    border-radius: 10px;
+}
+
+@media (orientation: landscape) and (max-height: 280px) {
+    .Thumbnail {
+        width: 22%;
+    }
+}
+
+.Thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.PlayButton {
+    position: absolute;
+    width: 24%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+.PlayButton:hover {
+    opacity: .9;
+}
+
+
+.Text {
+    padding: 0 2.5%;
+    /*background: gold;*/
+    width: 66%;
+    /*flex: 0 0 0;*/
+}
+
+@media (orientation: landscape) and (max-height: 280px) {
+    .Text {
+        width: 68%;
+    }
+}

@@ -1,0 +1,30 @@
+.Contacts {
+    background: #361E46;
+    padding-top: calc(60px + 20 * ((100vw - 320px) / (1903 - 320)));
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+    position: relative;
+}
+.Container {
+    height: calc((100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320)))) - 6vh - 2.33998 * (1.7rem + 28 * ((100vw - 320px) / (1903 - 320))));
+    width: 100%;
+}
+
+.ContactsIcons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    position: relative;
+    /*margin: 2% 2%;*/
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact svg {
+    cursor: pointer;
+}

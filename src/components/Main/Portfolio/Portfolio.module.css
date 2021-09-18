@@ -1,0 +1,136 @@
+.Portfolio {
+    padding-top: calc(60px + 20 * ((100vw - 320px) / (1903 - 320)));
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+    position: relative;
+    background: black;
+    z-index: 1;
+}
+
+.Container {
+    height: calc((100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320)))) - 9vh - 2.33998 * (1.7rem + 28 * ((100vw - 320px) / (1903 - 320))));
+    width: 100%;
+}
+
+.Wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    .Wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Wrapper {
+        width: 95%;
+    }
+}
+
+.Background {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - (60px + 20 * ((100vw - 320px) / (1903 - 320))));
+    z-index: 0;
+}
+
+.Text {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    height: 6%;
+    margin-bottom: 1%;
+}
+
+.Text p {
+    margin: 0;
+}
+
+.Container2 {
+    position: relative;
+    z-index: 1;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background: whitesmoke;*/
+
+}
+
+.Item1 {
+    position: relative;
+    height: 49%;
+    width: 100%;
+    z-index: 1;
+    margin: 1% 0 0 0;
+    border-radius: 10px;
+    background: #2a2a2a;
+    box-shadow: 0 0 calc(2px + 8 * ((100vw - 280px) / (1903 - 280))) calc(1px + 4 * ((100vw - 280px) / (1903 - 280))) white;
+    display: flex;
+
+}
+
+@media (orientation: portrait) {
+    .Item1 {
+        height: 40%;
+        margin: 5% 0 0 0;
+    }
+}
+
+.PicItem1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: 40%;
+}
+
+.PicItem1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.DiscItem1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1%;
+    width: 58%;
+}
+
+.DiscItem1 p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.Item2 {
+    position: relative;
+    height: 49%;
+    width: 100%;
+    z-index: 1;
+    margin: 1% 0 0 0;
+    border-radius: 10px;
+    background: #2a2a2a;
+    box-shadow: 0 0 calc(2px + 8 * ((100vw - 280px) / (1903 - 280))) calc(1px + 4 * ((100vw - 280px) / (1903 - 280))) white;
+    display: flex;
+
+}
+
+@media (orientation: portrait) {
+    .Item2 {
+        height: 40%;
+        margin: 15% 0 0 0;
+    }
+}
